@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <div  class = "grid_system">
+        <app-header></app-header>
+        <div class="row">
+            <div class = "col-sm-12 rooms-bar-bg">
+                <p class="rooms-Bar-text rooms-font-bold">CHECKOUT OUR ROOMS</p>
+        </div>
+        </div>
+        <div class="row">
+        <div class = "col-md-1 col-lg-2"></div>
+        <div class = "col-xs-12 col-sm-12 col-md-6 col-lg-4  column">
+            <div id='id1' >
+                <img class="resolution center"  [src]="imageSource">
+            </div>
+            
+
+            <div id='id2' *ngIf="!showMainContent">
+                <a-scene embedded class="resolution overlay" vr-mode-ui="enabled: false">
+                    <img id="panorama" src="{{image_360}}"/>
+                    <a-sky src="#panorama" rotation="0 -90 0"></a-sky>
+                    
+                </a-scene>
+            </div>
+        </div>
+    </div>
+        <div class="row gallery-row">
+            <div class = "col-xs-12 col-sm-12 col-md-1 col-lg-3">
+            </div>
+            <div class = "col-xs-12 col-sm-12 col-md-7 col-lg-6">
+                <h1 class="heading">ROOMS</h1>
+            <div class="row">
+                
+                <img src="{{image_1}}" alt="Rooms image" class="rounded float-left image col-xs-12 col-sm-3 col-md-3 col-lg-4" (click)="onImageClick($event)">
+                <img src="{{image_2}}" alt="Rooms image" class="rounded float-right image col-xs-12 col-sm-3 col-md-3 col-lg-4" (click)="onImageClick($event)">
+                <img src="{{image_3}}" alt="Rooms image" class="rounded float-right image col-xs-12 col-sm-3 col-md-3 col-lg-4" (click)="onImageClick($event)">
+                <img src="{{image_4}}" alt="Rooms image" class="rounded float-left image col-xs-12 col-sm-3 col-md-3 col-lg-4 {{showcontent_4_image}}" (click)="onImageClick($event)">
+                <img src="{{image_5}}" alt="Rooms image" class="rounded float-right image col-xs-12 col-sm-3 col-md-3 col-lg-4 {{showcontent_5_image}}" (click)="onImageClick($event)">
+                <img src="{{image_360}}" alt="Rooms image" class="rounded float-right image col-xs-12 col-sm-3 col-md-3 col-lg-4" (click)="showMainContent = false">
+            </div>
+            </div>
+            <div class = "col-xs-12 col-sm-12 col-md-3 col-lg-3"></div>
+        </div>
+        <app-footer></app-footer>
+    
+</div>

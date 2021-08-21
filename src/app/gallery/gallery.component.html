@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <div class = "grid_system">
+      <app-header></app-header>
+
+      <div class="row menu-padding">
+        <div class = "col-sm-12 rooms-bar-bg">
+            <p class="rooms-Bar-text  menu rooms-font-bold">GALLERY</p>
+      </div>
+      </div>
+      <div class = "row">
+        <video controls class="rounded mx-auto d-block video-demo">
+          <source src="assets/images/Photos/video/rlhouse_video.mp4" type="video/mp4">
+          <source src="mov_bbb.ogg" type="video/ogg">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+     <div class = "col-sm-12 rooms-bar-bg">
+        <p class="rooms-Bar-text  menu rooms-font-bold">IMAGES</p>
+      </div>
+      <div class="row rooms-table">
+        <div class = "col-md-1 col-lg-2"></div>
+        <div class = "col-xs-10 col-sm-10 col-md-5 col-lg-4" >
+            <div class="container">
+              <img class="image" src="assets/images/Photos/Front Elevation/2.jpeg" alt="Third slide">
+                <div class="overlay cnt">
+                    <button mat-mini-fab class="mini-fab-btn-color" (click)="sendRouteObject('Front_Elevation')"><mat-icon class="material-icons">search</mat-icon></button>
+                </div>
+
+              </div>
+        </div>
+        <div class = "col-xs-12 col-sm-12 col-md-5 col-lg-4 center">
+            <h1 class="rooms-font-bold">Front Elevation</h1>
+            <p class="rooms-font-size">Elegant yet conse rooms are outfitted with special built-in work desks and offer must-haves like flat screen televisions and wi-fi internet connectivity featuring queen size beds or twin Bed.</p>
+        </div>
+        <div class = "col-md-1 col-lg-2"></div>
+    </div>
+  <div class="row rooms-table">
+    <div class = "col-md-1 col-lg-2"></div>
+    <div class = "col-xs-10 col-sm-10 col-md-5 col-lg-4" >
+        <div class="container">
+          <img class="image" src="assets/images/Photos/Campfire/3.jpeg" alt="Third slide">
+            <div class="overlay cnt">
+              <button mat-mini-fab class="mini-fab-btn-color" (click)="sendRouteObject('Camp_Fire')"><mat-icon class="material-icons">search</mat-icon></button>
+            </div>
+
+          </div>
+    </div>
+    <div class = "col-xs-12 col-sm-12 col-md-5 col-lg-4 center">
+        <h1 class="rooms-font-bold">CampFire Gallery</h1>
+        <p class="rooms-font-size">Elegant yet conse rooms are outfitted with special built-in work desks and offer must-haves like flat screen televisions and wi-fi internet connectivity featuring queen size beds or twin Bed.</p>
+    </div>
+    <div class = "col-md-1 col-lg-2"></div>
+</div>
+  <app-footer></app-footer>
+</div>

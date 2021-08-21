@@ -1,0 +1,15 @@
+{
+    "/api": {
+      "target": "https://aframe.io/releases/1.2.0/aframe.min.js",
+      "secure": false
+    },
+
+    "/damal": {
+        "target": "https://",
+        "secure": false
+      }
+  }
+
+ 
+   
+ 

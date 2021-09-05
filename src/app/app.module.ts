@@ -15,6 +15,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { RoomgalleryComponent } from './roomgallery/roomgallery.component';
 import { ThreeSixtyModule } from '@mediaman/angular-three-sixty';
 import { InfraviewComponent } from './infraview/infraview.component';
+import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { InfraviewComponent } from './infraview/infraview.component';
     NgbModule,
     ThreeSixtyModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

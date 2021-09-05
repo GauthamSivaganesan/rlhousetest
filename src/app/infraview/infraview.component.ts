@@ -30,7 +30,10 @@ export class InfraviewComponent {
       this.routeState = this.router.getCurrentNavigation().extras.state;
       if (this.routeState) {
         this.data.site = this.routeState.site ? this.routeState.site : '';
-        switch(this.data.site){
+        localStorage.setItem('dataSource', this.data.site);
+      }
+    }
+        switch(window.localStorage.getItem('dataSource')){
           case 'Front_Elevation':{
             this.image_1="assets/images/Photos/Front Elevation/1.jpeg"
             this.image_2="assets/images/Photos/Front Elevation/2.jpeg"
@@ -78,8 +81,6 @@ export class InfraviewComponent {
             this.imageSource="assets/images/Photos/Front Elevation/1.jpeg"
           }
         }        
-      }
-    }
   }
 onThreesixty(event:any){
   if(this.data.site=='Front_Elevation'){

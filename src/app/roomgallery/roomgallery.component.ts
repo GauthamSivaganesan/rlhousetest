@@ -27,11 +27,17 @@ export class RoomgalleryComponent {
   showcontent_6_image: string
 
   constructor(private router: Router) {
+    
     if (this.router.getCurrentNavigation().extras.state) {
       this.routeState = this.router.getCurrentNavigation().extras.state;
       if (this.routeState) {
         this.data.site = this.routeState.site ? this.routeState.site : '';
-        switch(this.data.site){
+        localStorage.setItem('dataSource', this.data.site);
+      }
+    }
+        
+        switch(window.localStorage.getItem('dataSource')){
+          
           case 'Deluxe_Room':{
             this.image_1="assets/images/Photos/Deluxe Room/1.jpeg"
             this.image_2="assets/images/Photos/Deluxe Room/2.jpeg"
@@ -53,7 +59,7 @@ export class RoomgalleryComponent {
             this.image_360="assets/images/Photos/Joint Room/360.jpeg"
             this.imageSource="assets/images/Photos/Joint Room/1.jpeg"
             this.showcontent_4_image="showcontent"
-            this.showcontent_5_image="showcontent"
+            this.showcontent_5_image=""
           }break;
           case 'Executive_Room':{
             this.image_1="assets/images/Photos/Executive Room/1.jpeg"
@@ -67,12 +73,8 @@ export class RoomgalleryComponent {
             this.showcontent_5_image="showcontent"
             this.showcontent_6_image="showcontent"
           }break;
-        }
-        
+        }       
       }
-    }
-  }
-
   onImageClick(event:any){
     this.showMainContent=true;
   this.imageSource=event.target.getAttribute('src');

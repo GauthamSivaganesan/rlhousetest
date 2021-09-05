@@ -15,13 +15,10 @@ padding-left: 20px;
     padding: 50px;
   }
   .bg-bar{
-    background-image: url("../../assets/images/wp3.jpg");
+    background-image: url("../../assets/images/Border_BG.jpg");
             background-repeat: repeat;
             background-position: 10% 10%  
-    /*background-image: linear-gradient(0deg, #8B0000, rgb(226, 213, 30));*/
-   /* background-image: radial-gradient( #FF4500, #8B0000);*/
-    /*background: #9b1c31;    */
-}
+  }
 .gr {
             
     background: linear-gradient(to right, #bf953f,#fcf6ba,#d8b15d,#fbf5b7,#aa771c);

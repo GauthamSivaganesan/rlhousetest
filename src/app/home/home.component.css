@@ -177,7 +177,7 @@
         }
         .card-bg{
           
-          background-image: url("../../assets/images/pp.png");
+          background-image: url("../../assets/images/Old_Paper_BG.png");
           background-repeat: repeat;
           background-position: 10% 10%;
           
@@ -188,9 +188,11 @@
           justify-content: center;
       }
         .testi{
-          background-image: url("../../assets/images/test.png");
-          background-repeat: repeat;
-          background-position: 10% 10%;
+          background-image: url("../../assets/images/Room_BG_Transparent.png");
+          height: 100%;
+          overflow: hidden;
+          background-size: cover;
+          background-position: center;
         }
         .testimonals {
           border: 2px solid #ccc;

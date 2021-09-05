@@ -13,7 +13,7 @@ export class FooterComponent implements OnInit {
   constructor(private _lightbox: Lightbox) {
     for (let i = 1; i <=7; i++) {
       const src = 'assets/images/Photos/Footer/' + i + '.jpeg';
-      const caption = 'Image ' + i + ' caption here';
+      const caption = '';
       const thumb = 'assets/images/Photos/Footer/' + i + '.jpeg';
       const album = {
          src: src,
